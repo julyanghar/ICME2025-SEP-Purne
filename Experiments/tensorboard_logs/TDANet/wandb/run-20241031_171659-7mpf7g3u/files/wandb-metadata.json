@@ -1,0 +1,81 @@
+{
+  "os":  "Linux-5.15.0-122-generic-x86_64-with-glibc2.31",
+  "python":  "3.10.13",
+  "startedAt":  "2024-10-31T09:16:59.599984Z",
+  "program":  "/home/zhaoyu/projects/code/Look2hear/audio_train.py",
+  "codePath":  "audio_train.py",
+  "email":  "915997295@qq.com",
+  "root":  "/home/zhaoyu/projects/code/Look2hear/Experiments/tensorboard_logs/TDANet",
+  "host":  "XM-IDC-010-100-039-123",
+  "username":  "zhaoyu",
+  "executable":  "/home/zhaoyu/anaconda3/envs/torch-2.2/bin/python",
+  "codePathLocal":  "audio_train.py",
+  "cpu_count":  32,
+  "cpu_count_logical":  64,
+  "gpu":  "NVIDIA GeForce RTX 4090",
+  "gpu_count":  8,
+  "disk":  {
+    "/":  {
+      "total":  "200449576960",
+      "used":  "27238952960"
+    }
+  },
+  "memory":  {
+    "total":  "540662775808"
+  },
+  "cpu":  {
+    "count":  32,
+    "countLogical":  64
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4090",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "name":  "NVIDIA GeForce RTX 4090",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "name":  "NVIDIA GeForce RTX 4090",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "name":  "NVIDIA GeForce RTX 4090",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "name":  "NVIDIA GeForce RTX 4090",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "name":  "NVIDIA GeForce RTX 4090",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "name":  "NVIDIA GeForce RTX 4090",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    },
+    {
+      "name":  "NVIDIA GeForce RTX 4090",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  16384,
+      "architecture":  "Ada"
+    }
+  ],
+  "cudaVersion":  "12.2"
+}

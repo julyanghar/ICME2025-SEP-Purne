@@ -1,0 +1,157 @@
+_wandb:
+    value:
+        cli_version: 0.18.5
+        m:
+            - "1": epoch
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+            - "1": val_pit_sisnr
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": test_pit_sisnr
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": learning_rate
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+        python_version: 3.10.13
+        t:
+            "1":
+                - 1
+                - 9
+                - 49
+                - 53
+                - 55
+                - 103
+            "2":
+                - 1
+                - 9
+                - 49
+                - 50
+                - 53
+                - 55
+                - 103
+            "3":
+                - 7
+                - 13
+                - 23
+                - 55
+                - 66
+            "4": 3.10.13
+            "5": 0.18.5
+            "8":
+                - 5
+            "12": 0.18.5
+            "13": linux-x86_64
+audionet_audionet_config_enc_kernel_size:
+    value: 4
+audionet_audionet_config_in_channels:
+    value: 512
+audionet_audionet_config_num_blocks:
+    value: 16
+audionet_audionet_config_num_sources:
+    value: 2
+audionet_audionet_config_out_channels:
+    value: 128
+audionet_audionet_config_upsampling_depth:
+    value: 5
+audionet_audionet_name:
+    value: TDANet
+datamodule_data_config_batch_size:
+    value: 8
+datamodule_data_config_n_src:
+    value: 2
+datamodule_data_config_normalize_audio:
+    value: false
+datamodule_data_config_num_workers:
+    value: 8
+datamodule_data_config_persistent_workers:
+    value: false
+datamodule_data_config_pin_memory:
+    value: true
+datamodule_data_config_sample_rate:
+    value: 16000
+datamodule_data_config_segment:
+    value: 2
+datamodule_data_config_test_dir:
+    value: DataPreProcess/LRS2_bak/tt
+datamodule_data_config_train_dir:
+    value: DataPreProcess/LRS2_bak/tr
+datamodule_data_config_valid_dir:
+    value: DataPreProcess/LRS2_bak/cv
+datamodule_data_name:
+    value: LRS2DataModule
+exp_exp_name:
+    value: TDANet
+loss_train_config_pit_from:
+    value: pw_mtx
+loss_train_config_threshold_byloss:
+    value: true
+loss_train_loss_func:
+    value: PITLossWrapper
+loss_train_sdr_type:
+    value: pairwise_neg_snr
+loss_val_config_pit_from:
+    value: pw_mtx
+loss_val_config_threshold_byloss:
+    value: false
+loss_val_loss_func:
+    value: PITLossWrapper
+loss_val_sdr_type:
+    value: pairwise_neg_sisdr
+main_args_exp_dir:
+    value: /home/zhaoyu/projects/code/Look2hear/Experiments/checkpoint/TDANet
+optimizer_lr:
+    value: 0.001
+optimizer_optim_name:
+    value: adam
+optimizer_weight_decay:
+    value: 0
+options_conf_dir:
+    value: /home/zhaoyu/projects/code/Look2hear/configs/tdanet.yml
+options_help:
+    value: None
+scheduler_sche_config_factor:
+    value: 0.5
+scheduler_sche_config_patience:
+    value: 15
+scheduler_sche_name:
+    value: ReduceLROnPlateau
+training_SpeedAug:
+    value: false
+training_early_stop_mode:
+    value: min
+training_early_stop_monitor:
+    value: val_loss/dataloader_idx_0
+training_early_stop_patience:
+    value: 30
+training_early_stop_verbose:
+    value: true
+training_epochs:
+    value: 500
+training_gpus:
+    value:
+        - 0
+        - 1
+        - 2
+        - 3
+training_parallel:
+    value: ddp
+training_system:
+    value: AudioLightningModule

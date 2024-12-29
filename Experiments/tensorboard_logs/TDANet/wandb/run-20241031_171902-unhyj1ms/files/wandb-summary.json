@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":9},"trainer/global_step":0,"learning_rate":0.001,"epoch":0,"_timestamp":1.7303663508067021e+09,"_runtime":8.455535991,"_step":2,"val_pit_sisnr":-27.82392120361328,"test_pit_sisnr":-27.345319747924805}

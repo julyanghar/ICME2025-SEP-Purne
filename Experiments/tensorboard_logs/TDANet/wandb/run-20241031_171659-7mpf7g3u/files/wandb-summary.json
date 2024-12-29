@@ -1,0 +1,1 @@
+{"epoch":0,"_step":2,"_runtime":8.694355372,"test_pit_sisnr":-27.354440689086914,"_timestamp":1.7303662282942014e+09,"_wandb":{"runtime":24},"trainer/global_step":0,"val_pit_sisnr":-25.526206970214844,"learning_rate":0.001}

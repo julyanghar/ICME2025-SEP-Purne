@@ -1,0 +1,15 @@
+{"time":"2024-10-31T17:16:28.194444419+08:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-10-31T17:16:28.194493334+08:00","level":"INFO","msg":"created symlink","path":"/home/zhaoyu/projects/code/Look2hear/Experiments/tensorboard_logs/TDANet/wandb/run-20241031_171628-ahv9ok4r/logs/debug-core.log"}
+{"time":"2024-10-31T17:16:28.313666826+08:00","level":"INFO","msg":"created new stream","id":"ahv9ok4r"}
+{"time":"2024-10-31T17:16:28.313768569+08:00","level":"INFO","msg":"stream: started","id":"ahv9ok4r"}
+{"time":"2024-10-31T17:16:28.31389989+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ahv9ok4r"}}
+{"time":"2024-10-31T17:16:28.314097369+08:00","level":"INFO","msg":"sender: started","stream_id":"ahv9ok4r"}
+{"time":"2024-10-31T17:16:28.314017409+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ahv9ok4r"}}
+{"time":"2024-10-31T17:16:29.54711581+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-31T17:16:33.740891614+08:00","level":"INFO","msg":"stream: closing","id":"ahv9ok4r"}
+{"time":"2024-10-31T17:16:33.740950847+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-31T17:16:33.741912199+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-31T17:16:34.074733649+08:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-10-31T17:16:34.074766684+08:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-10-31T17:16:34.074778646+08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-10-31T17:16:34.888426045+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

@@ -1,0 +1,27 @@
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_setup.py:_flush():79] Current SDK version is 0.18.5
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_setup.py:_flush():79] Configure stats pid to 93581
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_setup.py:_flush():79] Loading settings from /home/zhaoyu/.config/wandb/settings
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_setup.py:_flush():79] Loading settings from /home/zhaoyu/projects/code/Look2hear/wandb/settings
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'audio_train.py', 'program_abspath': '/home/zhaoyu/projects/code/Look2hear/audio_train.py', 'program': '/home/zhaoyu/projects/code/Look2hear/audio_train.py'}
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_init.py:_log_setup():534] Logging user logs to /home/zhaoyu/projects/code/Look2hear/Experiments/tensorboard_logs/TDANet/wandb/run-20241031_171742-q3bpapsd/logs/debug.log
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_init.py:_log_setup():535] Logging internal logs to /home/zhaoyu/projects/code/Look2hear/Experiments/tensorboard_logs/TDANet/wandb/run-20241031_171742-q3bpapsd/logs/debug-internal.log
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_init.py:init():621] calling init triggers
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_init.py:init():628] wandb.init called with sweep_config: {}
+config: {}
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_init.py:init():671] starting backend
+2024-10-31 17:17:42,915 INFO    MainThread:93581 [wandb_init.py:init():675] sending inform_init request
+2024-10-31 17:17:42,916 INFO    MainThread:93581 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-10-31 17:17:42,917 INFO    MainThread:93581 [wandb_init.py:init():688] backend started and connected
+2024-10-31 17:17:42,919 INFO    MainThread:93581 [wandb_init.py:init():783] updated telemetry
+2024-10-31 17:17:42,920 INFO    MainThread:93581 [wandb_init.py:init():816] communicating run to backend with 90.0 second timeout
+2024-10-31 17:17:44,116 INFO    MainThread:93581 [wandb_init.py:init():867] starting run threads in backend
+2024-10-31 17:17:44,221 INFO    MainThread:93581 [wandb_run.py:_console_start():2463] atexit reg
+2024-10-31 17:17:44,221 INFO    MainThread:93581 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2024-10-31 17:17:44,221 INFO    MainThread:93581 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2024-10-31 17:17:44,221 INFO    MainThread:93581 [wandb_run.py:_redirect():2401] Redirects installed.
+2024-10-31 17:17:44,223 INFO    MainThread:93581 [wandb_init.py:init():911] run started, returning control to user process
+2024-10-31 17:17:49,108 INFO    MainThread:93581 [wandb_run.py:_config_callback():1390] config_cb None None {'options_help': 'None', 'options_conf_dir': '/home/zhaoyu/projects/code/Look2hear/configs/tdanet.yml', 'audionet_audionet_name': 'TDANet', 'audionet_audionet_config_out_channels': 128, 'audionet_audionet_config_in_channels': 512, 'audionet_audionet_config_num_blocks': 16, 'audionet_audionet_config_upsampling_depth': 5, 'audionet_audionet_config_enc_kernel_size': 4, 'audionet_audionet_config_num_sources': 2, 'loss_train_loss_func': 'PITLossWrapper', 'loss_train_sdr_type': 'pairwise_neg_snr', 'loss_train_config_pit_from': 'pw_mtx', 'loss_train_config_threshold_byloss': True, 'loss_val_loss_func': 'PITLossWrapper', 'loss_val_sdr_type': 'pairwise_neg_sisdr', 'loss_val_config_pit_from': 'pw_mtx', 'loss_val_config_threshold_byloss': False, 'training_system': 'AudioLightningModule', 'training_gpus': [1, 2, 3, 4, 5, 6, 7, 0], 'training_parallel': 'ddp', 'training_epochs': 500, 'training_early_stop_monitor': 'val_loss/dataloader_idx_0', 'training_early_stop_mode': 'min', 'training_early_stop_patience': 30, 'training_early_stop_verbose': True, 'training_SpeedAug': False, 'optimizer_optim_name': 'adam', 'optimizer_lr': 0.001, 'optimizer_weight_decay': 0, 'scheduler_sche_name': 'ReduceLROnPlateau', 'scheduler_sche_config_patience': 15, 'scheduler_sche_config_factor': 0.5, 'datamodule_data_name': 'LRS2DataModule', 'datamodule_data_config_train_dir': 'DataPreProcess/LRS2_bak/tr', 'datamodule_data_config_valid_dir': 'DataPreProcess/LRS2_bak/cv', 'datamodule_data_config_test_dir': 'DataPreProcess/LRS2_bak/tt', 'datamodule_data_config_n_src': 2, 'datamodule_data_config_sample_rate': 16000, 'datamodule_data_config_segment': 2.0, 'datamodule_data_config_normalize_audio': False, 'datamodule_data_config_batch_size': 6, 'datamodule_data_config_num_workers': 8, 'datamodule_data_config_pin_memory': True, 'datamodule_data_config_persistent_workers': False, 'exp_exp_name': 'TDANet', 'main_args_exp_dir': '/home/zhaoyu/projects/code/Look2hear/Experiments/checkpoint/TDANet'}
+2024-10-31 17:18:52,146 WARNING MsgRouterThr:93581 [router.py:message_loop():77] message_loop has been closed
