@@ -1,4 +1,7 @@
 import numpy as np
+import matplotlib.pyplot as plt
+import torch
+
 
 def get_class_ave(samples, start, end):
     """
@@ -125,18 +128,32 @@ def get_split_info(samples, split_loss_result, split_points):
 
     return k_best, split, sample_class
 
-def main(samples):
-    # 设置分类数k
-    k = 4
-    split_loss_result, split_points = get_split_loss(samples, len(samples), k)
-    k_best, split, sample_class = get_split_info(samples, split_loss_result, split_points)
-    print('-'*50)
-    print(k_best)
-    print(split)
-    print(sample_class)
+# RESNET56  CIFAR10: CKA_matrix_for_visualization_resnet56_cifar10.pth, CKA_matrix_for_visualization_cvgg16_bn_cifar10.pth
+matrix = torch.load('save/CKA_matrix_for_visualization_tdanet.pth')
+avg_matrix = torch.zeros((matrix[0].shape[0], matrix[0].shape[1]))
+
+for i in range(len(matrix)):
+    avg_matrix += matrix[i] 
+
+avg_matrix = avg_matrix / len(matrix)
+samples = torch.sum(avg_matrix, dim=0)
+print(samples)
+
+# 设置分类数k
+k = 4
+# print(split_loss_result[-1, -1])
+split_loss_result, split_points = get_split_loss(samples, len(samples), k)
+k_best, split, sample_class = get_split_info(samples, split_loss_result, split_points)
+print('-'*50)
+print(k_best)
+print(split)
+print(sample_class)
+
+# # 绘图（散点图）
+# plt.scatter(list(range(len(samples))), samples, c=sample_class)
+# plt.xlabel('K')
+# plt.ylabel('Loss')
+# plt.show()
 
 
 
-samples = [1,0.7,0.6,0.5,0.8]
-
-main(samples)
